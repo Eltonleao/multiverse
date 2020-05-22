@@ -1,14 +1,23 @@
 {
+  "homepage": "eltonleao.github.io/multiverse",
   "name": "eltonleao.github.io",
   "version": "1.0.0",
-  "description": "A Multiverse to explore",
+  "description": "A Multiverse To Explore",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "author": "3ltonleao",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "gh-pages": "^2.2.0",
+    "parcel": "^1.12.4",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "material-design-lite": "^1.3.0"
   }
 }
